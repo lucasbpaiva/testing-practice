@@ -1,17 +1,17 @@
 import { reverseString } from "./reverseString.js";
 
 test("reverses string", () => {
-    expect(capitalize("hello")).toBe("olleh");
+    expect(reverseString("hello world")).toBe("dlrow olleh");
 });
 
 test("preserves case", () => {
-    expect(capitalize("Hello")).toBe("olleH");
+    expect(reverseString("HelLo")).toBe("oLleH");
 });
 
 test("works with empty string", () => {
-    expect(capitalize("")).toBe("");
+    expect(reverseString("")).toBe("");
 });
 
 test("works with unitary string", () => {
-    expect(capitalize("a")).toBe("a");
+    expect(reverseString("a")).toBe("a");
 });
